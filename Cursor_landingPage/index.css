@@ -249,5 +249,23 @@ body {
   color: #999;
   font-size: 13px;
 }
+.columns {
+  display: flex;
+  gap: 24px;
+}
 
+.column {
+  flex: 1;
+}
 
+.image-box {
+  margin-top: auto;
+  background: #2a2a2a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+}
