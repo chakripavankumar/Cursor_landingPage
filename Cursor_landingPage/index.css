@@ -228,44 +228,152 @@ body {
   line-height: 1.6;
   margin-bottom: 32px;
 }
-.profile {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+
+.features {
+  background: #0f0f0c;
+  padding: 80px 0;
 }
 
-.profile img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-
-.profile strong {
-  color: white;
-  font-size: 14px;
+.section-title {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 40px;
 }
-
-.profile span {
-  color: #999;
-  font-size: 13px;
-}
-.columns {
-  display: flex;
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
-.column {
-  flex: 1;
-}
-
-.image-box {
-  margin-top: auto;
-  background: #2a2a2a;
+.card {
+  background: #171715;
   border-radius: 12px;
-  overflow: hidden;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+}
+.card-content h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 
-.image-box img {
+.card-content p {
+  color: #b5b5b5;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card-content a {
+  color: #ff6a00;
+  text-decoration: none;
+  font-size: 14px;
+}
+.card img {
   width: 100%;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+.team-section {
+  background: #0f0f0c;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.text-block {
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.text-block h1 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.cta-button {
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
   display: block;
+}
+.cta-section {
+  background: #1b1a12; /* brownie shade */
+  width: 100%;
+  min-height: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  gap: 20px;
+}
+.cta-section h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+}
+.cta-btn {
+  background: #ffffff;
+  color: #000000;
+
+  border: none;
+  border-radius: 999px;
+
+  padding: 12px 22px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer {
+  background: #14140e;
+  padding: 80px 0;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-col h4 {
+  color: #9b9b9b;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #d1d1d1;
+  font-size: 13px;
+  text-decoration: none;
+}
+.footer-col a:hover {
+  color: #ffffff;
 }
